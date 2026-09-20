@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Ananya S. — DevOps, Kubernetes, Infrastructure and Observability portfolio">
+<title>Ananya S. | DevOps & Infrastructure</title>
+<style>
+:root{--bg:#070b14;--panel:#0d1320;--text:#eef2ff;--muted:#9aa7bd;--line:#1f2a3d;--blue:#60a5fa;--green:#34d399;--max:1120px}
+*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0,#122342 0,transparent 35%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+nav{position:sticky;top:0;z-index:10;background:rgba(7,11,20,.8);backdrop-filter:blur(14px);border-bottom:1px solid #172033}.nav{height:68px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:800}.logo span{color:var(--blue)}.links{display:flex;gap:25px;color:var(--muted);font-size:.92rem}.links a:hover{color:#fff}
+.hero{min-height:680px;padding:105px 0 80px;display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center}.kicker,.eyebrow{color:#93c5fd;font-weight:800;letter-spacing:.11em;text-transform:uppercase;font-size:.78rem}.kicker{display:flex;gap:8px;align-items:center}.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 16px var(--green)}
+h1{font-size:clamp(3rem,7vw,6.2rem);line-height:.96;letter-spacing:-.06em;margin:18px 0 24px}.gradient{background:linear-gradient(100deg,#fff,#93c5fd 55%,#6ee7b7);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:1.12rem;color:var(--muted);max-width:700px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0}.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:12px;border:1px solid var(--line);background:#111827;font-weight:700;transition:.2s}.btn:hover{transform:translateY(-2px);border-color:#3b5275}.primary{background:#f8fafc;color:#0b1020;border-color:#fff}
+.hero-card,.card,.case-panel,.skill,.cta{background:linear-gradient(145deg,var(--panel),#0a101b);border:1px solid var(--line);border-radius:20px}.hero-card{padding:28px;box-shadow:0 30px 80px #0005}.terminal{font:14px/1.7 ui-monospace,SFMono-Regular,Consolas,monospace;color:#cbd5e1}.prompt{color:var(--green)}.comment{color:#64748b}.statgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}.stat{padding:16px;border:1px solid var(--line);border-radius:14px}.stat strong{display:block;font-size:1.25rem}.stat span{color:var(--muted);font-size:.78rem}
+section{padding:85px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}.section-head h2{margin:8px 0 0}.section-head p{max-width:500px;color:var(--muted);margin:0}h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.05;letter-spacing:-.04em}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:26px;position:relative;overflow:hidden;transition:.25s}.card:hover{transform:translateY(-5px);border-color:#30435f}.number{color:#64748b;font:12px ui-monospace,monospace}.card h3{font-size:1.35rem;margin:15px 0 10px}.card p{color:var(--muted);font-size:.94rem}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.tag{padding:5px 9px;border:1px solid var(--line);border-radius:999px;color:#cbd5e1;font-size:.74rem;background:#0a111e}.card-link{display:inline-block;margin-top:20px;color:#bfdbfe;font-weight:700;font-size:.9rem}
+.case{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;margin:20px 0}.case-panel{padding:28px}.flow{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin:24px 0}.node{background:#101c31;border:1px solid #29456e;border-radius:11px;padding:10px 13px;font-weight:700;font-size:.85rem}.arrow{color:#64748b}ul{padding-left:20px;color:var(--muted)}li{margin:9px 0}
+.timeline{border-left:1px solid var(--line);margin-left:9px;padding-left:25px}.timeline-item{position:relative;margin-bottom:28px}.timeline-item:before{content:"";position:absolute;left:-31px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 5px var(--bg)}.timeline h3{margin:0 0 5px}.timeline p{margin:0;color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.skill{padding:18px}.skill strong{display:block;margin-bottom:7px}.skill span{color:var(--muted);font-size:.85rem}.cta{padding:45px;text-align:center;background:linear-gradient(135deg,#10213d,#0c1728);border-color:#29456e}.cta p{color:var(--muted);max-width:650px;margin:12px auto 24px}footer{border-top:1px solid var(--line);padding:28px 0;color:#718096;font-size:.84rem}
+@media(max-width:850px){.hero,.case{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.skills{grid-template-columns:1fr 1fr}.links{display:none}.hero{padding-top:70px}}@media(max-width:520px){.container{width:calc(100% - 28px)}.hero{padding:60px 0}.skills{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:15px}.cta{padding:30px 20px}}
+</style>
+
+<style id="ananya-clean-theme">
+:root{
+  --accent:#8f82ff;
+  --accent-2:#6ee7d8;
+  --accent-soft:rgba(143,130,255,.08);
+  --border:rgba(255,255,255,.075);
+}
+html{scroll-behavior:smooth}
+body{
+  background:#090a0e !important;
+  color:#e8e9ee;
+}
+body:before,body:after{
+  opacity:.18 !important;
+}
+.gradient{
+  background:linear-gradient(100deg,#d2ceff 0%,#9b91ff 55%,#8ce9db 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+.card,.project-card,.case-card,.skill-card,.terminal,.stat{
+  border-radius:10px !important;
+  border:1px solid var(--border) !important;
+  box-shadow:none !important;
+  background:rgba(17,18,24,.72) !important;
+}
+.card:hover,.project-card:hover,.case-card:hover,.skill-card:hover{
+  transform:none !important;
+  border-color:rgba(143,130,255,.24) !important;
+  box-shadow:none !important;
+}
+.badge,.tag,.pill{
+  border-radius:5px !important;
+  background:transparent !important;
+  border:1px solid rgba(255,255,255,.10) !important;
+}
+.btn,.button{
+  border-radius:7px !important;
+  box-shadow:none !important;
+}
+.dot{
+  background:var(--accent) !important;
+  box-shadow:0 0 0 4px rgba(143,130,255,.07) !important;
+}
+nav{
+  backdrop-filter:blur(12px);
+  background:rgba(9,10,14,.88) !important;
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+section{
+  border-top-color:rgba(255,255,255,.05) !important;
+}
+</style>
+
+</head>
+<body>
+<nav><div class="container nav"><a class="logo" href="#top">Ananya<span>.</span></a><div class="links"><a href="#work">Work</a><a href="#case-studies">Case Studies</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></div></nav>
+
+<main id="top">
+<header class="container hero">
+<div>
+<div class="kicker"><span class="dot"></span> DevOps · Kubernetes · Observability</div>
+<h1>Engineering reliable<br><span class="gradient">DevOps systems.</span></h1>
+<p>Entry-level Software Engineer focused on DevOps and infrastructure, with hands-on experience in Linux, Docker, Kubernetes, CI/CD, production deployment, security infrastructure, and observability.</p>
+<div class="actions"><a class="btn primary" href="#work">Explore my work ↓</a><a class="btn" href="https://github.com/ananyas28/kubernetes-security-operator" target="_blank">GitHub ↗</a></div>
+<div class="tags"><span class="tag">Linux</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Go</span><span class="tag">CI/CD</span><span class="tag">Grafana</span><span class="tag">Prometheus</span><span class="tag">Wazuh</span></div>
+</div>
+<div class="hero-card"><div class="terminal"><div><span class="prompt">ananya@devops:~$</span> whoami</div><div>DevOps & Infrastructure Engineer</div><br><div><span class="prompt">ananya@devops:~$</span> kubectl get projects</div><div class="comment">NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STATUS</div><div>food-delivery&nbsp;&nbsp; production</div><div>observability&nbsp;&nbsp; running</div><div>k8s-operator&nbsp;&nbsp;&nbsp; deployed</div><div>streamlit-ci&nbsp;&nbsp;&nbsp; automated</div><div>wazuh-siem&nbsp;&nbsp;&nbsp;&nbsp; monitored</div><br><div><span class="prompt">ananya@devops:~$</span> echo $FOCUS</div><div>automation + reliability + security</div></div><div class="statgrid"><div class="stat"><strong>5</strong><span>hands-on projects</span></div><div class="stat"><strong>Go + K8s</strong><span>operator development</span></div><div class="stat"><strong>CI/CD</strong><span>production workflows</span></div><div class="stat"><strong>Observability</strong><span>logs + metrics</span></div></div></div>
+</header>
+
+<section id="work"><div class="container"><div class="section-head"><div><div class="eyebrow">Selected work</div><h2>Projects that show how I build.</h2></div><p>Hands-on work across production deployment, CI/CD, observability, Kubernetes, and security infrastructure.</p></div>
+<div class="grid">
+<article class="card"><span class="number">01 / PRODUCTION</span><h3>Food Delivery Platform</h3><p>Production DevOps deployment of a containerized Spring Boot application on Linux infrastructure with supporting services, reverse proxy, HTTPS, and CI/CD.</p><div class="tags"><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">Nginx</span><span class="tag">GitHub Actions</span></div><a class="card-link" href="#food">View case study →</a></article>
+<article class="card"><span class="number">02 / OBSERVABILITY</span><h3>Centralized Logging</h3><p>Production logging pipeline using Grafana Alloy, Loki, and Grafana to make application troubleshooting accessible without direct VPS access.</p><div class="tags"><span class="tag">Alloy</span><span class="tag">Loki</span><span class="tag">Grafana</span><span class="tag">Docker</span></div><a class="card-link" href="#observability">View case study →</a></article>
+<article class="card"><span class="number">03 / KUBERNETES</span><h3>Security & Observability Operator</h3><p>Go-based Kubernetes Operator using Kubebuilder and controller-runtime, with a SecurityMonitor CRD, reconciliation, RBAC, tests, Prometheus metrics, and ServiceMonitor.</p><div class="tags"><span class="tag">Go</span><span class="tag">Kubernetes</span><span class="tag">Kubebuilder</span><span class="tag">Prometheus</span></div><a class="card-link" href="https://github.com/ananyas28/kubernetes-security-operator" target="_blank">View on GitHub ↗</a></article>
+<article class="card"><span class="number">04 / CI/CD</span><h3>Streamlit DevOps Pipeline</h3><p>Containerized a Streamlit application and built an automated CI/CD workflow using Jenkins and Docker, covering image build, container deployment, and repeatable application delivery.</p><div class="tags"><span class="tag">Streamlit</span><span class="tag">Jenkins</span><span class="tag">Docker</span><span class="tag">CI/CD</span></div><a class="card-link" href="https://github.com/ananyas28/streamlit-devops" target="_blank">View on GitHub ↗</a></article>
+<article class="card"><span class="number">05 / SECURITY</span><h3>Wazuh SIEM Security Monitoring</h3><p>Hands-on security monitoring project using Wazuh SIEM to explore endpoint visibility, security events, log analysis, and centralized monitoring workflows.</p><div class="tags"><span class="tag">Wazuh</span><span class="tag">SIEM</span><span class="tag">Linux</span><span class="tag">Security</span></div><span class="card-link">Security monitoring project</span></article>
+</div></div></section>
+
+<section id="case-studies"><div class="container"><div class="section-head"><div><div class="eyebrow">Case studies</div><h2>From deployment to observability.</h2></div><p>Selected production engineering work, presented without confidential source code or infrastructure details.</p></div>
+<div class="case" id="food"><div class="case-panel"><div class="eyebrow">01 / Food Delivery Platform</div><h2>Production DevOps Deployment</h2><div class="flow"><span class="node">Spring Boot</span><span class="arrow">→</span><span class="node">Docker</span><span class="arrow">→</span><span class="node">Linux VPS</span><span class="arrow">→</span><span class="node">Nginx</span><span class="arrow">→</span><span class="node">HTTPS</span></div><p style="color:var(--muted)">Supporting services: PostgreSQL + Redis</p></div><div class="case-panel"><h3>What I worked on</h3><ul><li>Deployed and managed a Java Spring Boot backend using Docker and Docker Compose.</li><li>Configured PostgreSQL and Redis supporting services.</li><li>Configured Nginx reverse proxy, HTTPS/TLS, domain routing, CORS, and WebSocket-related connectivity.</li><li>Troubleshot containers, APIs, database connectivity, configuration, and application health.</li><li>Worked with GitHub Actions-based build and deployment workflows.</li></ul><div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Docker Compose</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span></div></div></div>
+<div class="case" id="observability"><div class="case-panel"><div class="eyebrow">02 / Observability</div><h2>Centralized Application Logging</h2><div class="flow"><span class="node">Containers</span><span class="arrow">→</span><span class="node">Grafana Alloy</span><span class="arrow">→</span><span class="node">Loki</span><span class="arrow">→</span><span class="node">Grafana</span></div></div><div class="case-panel"><h3>What I worked on</h3><ul><li>Implemented centralized log collection using Grafana Alloy.</li><li>Configured Loki as the centralized log storage and query layer.</li><li>Integrated Grafana for log exploration and visualization.</li><li>Organized logs using application, container, environment, and service labels.</li><li>Created dashboards and queries for production troubleshooting.</li><li>Enabled developers to investigate logs without direct VPS or Docker access.</li></ul><div class="tags"><span class="tag">Grafana Alloy</span><span class="tag">Loki</span><span class="tag">Grafana</span><span class="tag">Log Aggregation</span></div></div></div>
+</div></section>
+
+<section><div class="container"><div class="section-head"><div><div class="eyebrow">How I work</div><h2>Infrastructure mindset.</h2></div></div><div class="timeline">
+<div class="timeline-item"><h3>Deploy</h3><p>Containerize applications and configure Linux-based production infrastructure.</p></div>
+<div class="timeline-item"><h3>Automate</h3><p>Use CI/CD workflows to make build and deployment processes repeatable.</p></div>
+<div class="timeline-item"><h3>Observe</h3><p>Centralize logs and expose metrics so application and infrastructure behavior is visible.</p></div>
+<div class="timeline-item"><h3>Secure</h3><p>Apply security monitoring concepts, RBAC, hardening practices, and security-focused infrastructure tooling.</p></div>
+<div class="timeline-item"><h3>Improve</h3><p>Use troubleshooting and operational feedback to make systems more reliable and maintainable.</p></div>
+</div></div></section>
+
+<section id="skills"><div class="container"><div class="section-head"><div><div class="eyebrow">Toolbox</div><h2>Technologies I work with.</h2></div></div><div class="skills">
+<div class="skill"><strong>DevOps</strong><span>Docker · Compose · GitHub Actions · Git · CI/CD</span></div>
+<div class="skill"><strong>Kubernetes</strong><span>Kubernetes · Kubebuilder · CRDs · RBAC · Helm</span></div>
+<div class="skill"><strong>Observability</strong><span>Grafana · Loki · Alloy · Prometheus · ServiceMonitor</span></div>
+<div class="skill"><strong>Security</strong><span>Wazuh SIEM · Linux hardening · PKI · Security monitoring</span></div>
+<div class="skill"><strong>Infrastructure</strong><span>Linux VPS · Nginx · HTTPS/TLS · Networking</span></div>
+<div class="skill"><strong>Programming</strong><span>Go · Java · Spring Boot · REST APIs</span></div>
+<div class="skill"><strong>Databases</strong><span>PostgreSQL · Redis</span></div>
+<div class="skill"><strong>Platforms</strong><span>Ubuntu · Docker Desktop · WSL2</span></div>
+</div></div></section>
+
+<section id="contact"><div class="container"><div class="cta"><div class="eyebrow">Let's connect</div><h2>Interested in DevOps & Infrastructure?</h2><p>Explore the Kubernetes Operator source code or connect with me to discuss entry-level DevOps, Cloud, Platform, or infrastructure opportunities.</p><div class="actions" style="justify-content:center"><a class="btn primary" href="https://github.com/ananyas28/kubernetes-security-operator" target="_blank">GitHub ↗</a><a class="btn" href="https://www.linkedin.com/" target="_blank">LinkedIn ↗</a></div></div></div></section>
+</main>
+<footer><div class="container">© 2026 Ananya S. · DevOps & Infrastructure<br><span>Public case study — company-specific source code, credentials, private infrastructure details, and confidential information excluded.</span></div></footer>
+</body>
+</html>
